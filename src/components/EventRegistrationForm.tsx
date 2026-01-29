@@ -18,7 +18,6 @@ const EventRegistrationForm: React.FC<EventRegistrationFormProps> = ({ event, on
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
-    console.log(0);
     if (name.startsWith('custom_')) {
       setFormData(prev => ({
         ...prev,

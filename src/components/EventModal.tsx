@@ -11,6 +11,7 @@ interface EventModalProps {
 
 const EventModal: React.FC<EventModalProps> = ({ event, onClose }) => {
   const [showRegistration, setShowRegistration] = React.useState(false);
+  console.log("checking...");
   const formattedDate = format(new Date(event.date), 'EEEE, MMMM do, yyyy');
 
   return (
