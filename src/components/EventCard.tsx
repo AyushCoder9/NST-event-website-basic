@@ -21,6 +21,7 @@ interface EventCardProps {
 const EventCard: React.FC<EventCardProps> = ({ event, onClick }) => {
   // Format the date to be more readable
   const formattedDate = format(new Date(event.date), 'EEEE, MMMM do, yyyy');
+  console.log(event);
   
   return (
     <div 
